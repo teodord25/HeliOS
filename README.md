@@ -1,2 +1,2 @@
 # HeliOS
-Abandon Hope All Ye Who Enter Here
+Feel the power of the sun
