@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  qemu:
+    build: .
+      # volumes:
+      #   - ./src/bootloader.bin:/usr/src/app/bootloader.bin
+    devices:
+      - "/dev/kvm:/dev/kvm"
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+    network_mode: "host"
